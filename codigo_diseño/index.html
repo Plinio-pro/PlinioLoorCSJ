@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Clínica San José</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div>
+            <h1>CLINICA SAN JOSE | EMERGENCIAS</h1>
+            <p>Fecha: 15/07/2026 | Operador: ADMIN</p>
+        </div>
+        <div class="etiqueta bg-rojo animacion-alerta">SALA SATURADA</div>
+    </header>
+
+    <section class="contenedor-kpis">
+        <div class="tarjeta-kpi">
+            <h2>Camas Observacion</h2>
+            <p class="texto-rojo">0 / 10</p>
+        </div>
+        <div class="tarjeta-kpi">
+            <h2>Camas UCI</h2>
+            <p class="texto-moderado">1 / 8</p>
+        </div>
+        <div class="tarjeta-kpi">
+            <h2>Medico</h2>
+            <p class="texto-verde">Dr. Macias</p>
+        </div>
+    </section>
+
+    <section class="panel-tabla">
+        <h2>MONITOR DE PACIENTES</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Estado</th>
+                    <th>Signos Vitales</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>MEJIA, SOFIA (55)</strong></td>
+                    <td><span class="etiqueta bg-rojo">CRITICO</span></td>
+                    <td class="texto-rojo"><strong>PA: 70/40 | T: 35.8</strong></td>
+                    <td><button class="boton bg-rojo">TRASLADAR</button></td>
+                </tr>
+                <tr>
+                    <td><strong>PEREZ, JUAN (45)</strong></td>
+                    <td><span class="etiqueta bg-naranja">GRAVE</span></td>
+                    <td class="texto-naranja">PA: 180/110 | T: 38.5</td>
+                    <td><button class="boton" style="background:#475569">ASIGNAR</button></td>
+                </tr>
+                <tr>
+                    <td><strong>LOPEZ, MARIA (28)</strong></td>
+                    <td><span class="etiqueta bg-verde">LEVE</span></td>
+                    <td class="texto-verde">PA: 120/80 | T: 36.8</td>
+                    <td><button class="boton bg-verde">ALTA</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
